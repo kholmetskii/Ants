@@ -7,7 +7,7 @@ pygame.init()
 
 
 class Ant:
-    def __init__(self, x, y):
+    def __init__(self, x, y):  # initializing the ant
         self.x = x
         self.y = y
         self.angle = random.uniform(0, 2 * math.pi)
@@ -102,7 +102,7 @@ class Ant:
                     pygame.draw.line(screen, (153, 187, 255), (self.x, self.y), (x, y), 1)
 
 
-count = 550
+count = 600
 dst = 40
 fps = 120
 ants = [Ant(random.uniform(50, 1250), random.uniform(50, 750)) for _ in range(count)]
